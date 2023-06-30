@@ -96,9 +96,9 @@ function PlayList(props) {
   return (
     <div className="music-space">
       <div className="music-list">
-        <div className="list-title text-strong">Most Popular</div>
+        <div className="list-title text-strong">Top 10 V-Pop</div>
 
-        <div className="list-sub">6 songs</div>
+        <div className="list-sub">10 songs</div>
 
         <div className="play-list">
           {

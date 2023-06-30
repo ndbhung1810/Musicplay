@@ -1,13 +1,6 @@
-import React, { memo, useCallback, useEffect, useRef, useState } from 'react';
-
+import React, { memo, useCallback, useEffect, useRef, useState } from 'react'
 import { getDuration } from 'helper';
-
-// import audio from 'assets/music/coaycuaanhay.mp3';
-// import thumbnail from 'assets/image/music/1.jpg';
-
 import './music.css';
-
-// const audio = require('assets/music/coaycuaanhay.mp3');
 
 function MusicPlay(props) {
   const { name, artist, cover, id, src, currentIndex, allList, onHandleSelectedMusic } = props;
@@ -21,24 +14,10 @@ function MusicPlay(props) {
   const [duration, setDuration] = useState(0);
 
   useEffect(() => {
-    // if (audioRef?.current) {
-    //   setIsPlaying(true);
-
-    //   audioRef.current.play();
-    // }
     setIsPlaying(false);
-    // setTimeout(() => {
-    //   audioRef.current.play();
-    //   setIsPlaying(true);
-    // }, 1000);
   }, [id]);
 
-  // useEffect(() => {
-  //   setIsPlaying(false);
-  // }, []);
-
   const onChangeSlider = useCallback((event) => {
-    // setTimer(event.target.value);
     audioRef.current.currentTime = event.target.value;
   }, []);
 
@@ -51,9 +30,7 @@ function MusicPlay(props) {
 
     getTrackLength();
 
-    // if (audioRef.current) {
-    //   getTrackLength(audioRef.current);
-    // }
+
   }, []);
 
   const onUpdateTimer = useCallback(() => {
@@ -92,7 +69,6 @@ function MusicPlay(props) {
         <div className="song-slider">
           <input
             type="range"
-            // min="1"
             max={duration}
             value={timer}
             className="slider"
@@ -137,7 +113,6 @@ function MusicPlay(props) {
 
         <audio
           className="d-none"
-          // controls
           src={src}
           id="audio"
           ref={audioRef}
