@@ -1,0 +1,92 @@
+.music-space{
+  display: flex;
+  min-width: 1000px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+.music-list {
+  flex-grow: 1;
+  margin-right: 20px;
+  z-index: 0;
+  font-family: 'Raleway';
+}
+
+.list-title {
+  font-size: 1.6rem;
+}
+
+.list-sub{
+  color: gray;
+  margin-bottom: 16px;
+}
+
+.play-list{
+
+}
+
+.play-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: white;
+  border-radius: 4px;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.play-item.active {
+  background-color: #ffcfcf;
+}
+
+.play-item:last-child {
+  margin-bottom: 0;
+}
+
+.play-block {
+  display: flex;
+  align-items: center;
+}
+
+.index {
+  margin-right: 12px;
+}
+
+.thumbnail {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.play-icon{
+  margin-right: 12px;
+  color: gray;
+  opacity: .5;
+}
+
+.music-name{
+}
+
+.play-author{
+  color: gray;
+}
+
+.timer{
+  color: gray;
+}
+
+.fa-heart{
+  color: rgb(125, 193, 223);
+
+}
+.icon-like{
+
+}
+.music-playing {
+}
+
+.text-strong {
+  font-weight: bold;
+}
